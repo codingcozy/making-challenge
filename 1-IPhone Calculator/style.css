@@ -1,0 +1,81 @@
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("./assets/background.jpg") 0 0 / cover;
+}
+
+button {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.iphone {
+  width: 375px;
+  height: 667px;
+  background: url("./assets/iphone.png") 0 0 / 100% 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.calculator_wrap {
+  background-color: #000;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 26px;
+}
+
+.result_text_area {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 0 30px;
+  flex-grow: 1;
+}
+
+.result_text {
+  color: #fff;
+  font-size: 60px;
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.button_area {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 10px 16px 40px;
+}
+
+.oper_button {
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  background-color: #323332;
+  color: #fff;
+  font-size: 32px;
+}
+
+.oper_button.-option {
+  background-color: #a4a5a5;
+  color: #000;
+}
+
+.oper_button.-operator {
+  background-color: #fe9f09;
+}
+
+.oper_button.-colspan {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  aspect-ratio: 2/1;
+  border-radius: 100px;
+  text-align: left;
+  padding-left: 25px;
+}
