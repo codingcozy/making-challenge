@@ -1,0 +1,177 @@
+.wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.content {
+  display: flex;
+}
+
+.img_area {
+  position: relative;
+  width: 442px;
+}
+
+.screenshot_area {
+  width: 244px;
+  height: 520px;
+  background: url("./assets/screenshot0.png") 0 0 / 100% 100%;
+  position: absolute;
+  top: 22px;
+  right: 53px;
+  transition: 1s ease-in-out;
+}
+
+.home_phone {
+  width: 100%;
+  height: auto;
+}
+
+.signin_area {
+  width: 350px;
+}
+
+.signin_wrap {
+  border: 1px solid #dbdbdb;
+  padding: 40px 30px 20px;
+  text-align: center;
+}
+
+.logo {
+  margin-bottom: 30px;
+}
+
+.input_wrap {
+  position: relative;
+  background-color: #fafafa;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 12px;
+  overflow: hidden;
+}
+
+.input_wrap.is_active .label {
+  top: 3px;
+  font-size: 10px;
+}
+
+.input_wrap.is_active .input {
+  padding: 14px 8px 6px;
+  font-size: 12px;
+  color: #444;
+}
+
+.label {
+  position: absolute;
+  top: 12px;
+  left: 8px;
+  color: #737373;
+  transition: 0.2s ease-in-out;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: transparent;
+  box-sizing: border-box;
+  padding: 10px 8px;
+}
+
+.input_wrap + .input_wrap {
+  margin-top: 8px;
+}
+
+.login_button {
+  display: block;
+  width: 100%;
+  background-color: rgba(0, 149, 246, 0.7);
+  color: #fff;
+  margin-top: 16px;
+  border-radius: 8px;
+  height: 32px;
+  font-weight: 700;
+}
+
+.or {
+  position: relative;
+  display: block;
+  text-align: center;
+  color: #737373;
+  margin-top: 20px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.or::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #dbdbdb;
+}
+
+.or_text {
+  position: relative;
+  padding: 0 20px;
+  background-color: #fff;
+}
+
+.facebook_link {
+  display: inline-flex;
+  justify-content: center;
+  column-gap: 8px;
+  color: #385185;
+  margin-top: 30px;
+  font-weight: 700;
+}
+
+.facebook_link::before {
+  content: "";
+  background: url("./assets/facebook.png") 0 0 / contain;
+  width: 16px;
+  height: 16px;
+}
+
+.find_password {
+  margin-top: 20px;
+}
+
+.find_link {
+  color: #00367b;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.signup_box {
+  border: 1px solid #dbdbdb;
+  padding: 20px;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.signup_link {
+  color: #0095f6;
+}
+
+.app_text {
+  padding: 16px 0;
+  font-size: 14px;
+  display: block;
+  text-align: center;
+}
+
+.store_area {
+  display: flex;
+  justify-content: center;
+  column-gap: 8px;
+}

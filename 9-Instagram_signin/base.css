@@ -1,0 +1,89 @@
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+table,
+th,
+td,
+form,
+fieldset,
+legend,
+input,
+textarea,
+button,
+select {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  -webkit-text-size-adjust: none;
+}
+
+img,
+fieldset {
+  border: 0;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+em,
+address {
+  font-style: normal;
+}
+
+a {
+  color: inherit;
+}
+
+a,
+a:hover,
+a:active,
+a:focus {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+form,
+fieldset,
+button {
+  border: 0;
+  vertical-align: top;
+}
+
+button {
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+label {
+  cursor: pointer;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+svg {
+  display: block;
+}
