@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Weather app</title>
+  </head>
+  <body>
+    <div class="container" id="weatherWrap">
+      <div class="weather_card">
+        <div class="input_wrap">
+          <input type="text" id="cityInput" placeholder="Where Are You?" />
+          <button type="button">
+            <img src="./assets/button_search.png" alt="search" width="38" />
+          </button>
+        </div>
+        <div id="weatherInfo">
+          <img class="weather_icon" src="./assets/clear.png" alt="" width="150" />
+          <span class="temp">29</span>
+          <span class="description">Clouds</span>
+          <div class="sub_info">
+            <span class="humidity">29</span>
+            <span class="wind">11</span>
+          </div>
+        </div>
+        <div class="empty">No data yet.</div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

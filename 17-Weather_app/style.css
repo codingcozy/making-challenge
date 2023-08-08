@@ -1,0 +1,131 @@
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  color: #222;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.weather_card {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
+  padding: 40px;
+  width: 400px;
+  backdrop-filter: blur(30px);
+  min-height: 500px;
+  box-shadow: 0 2px 24px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+}
+
+.input_wrap {
+  display: flex;
+  border-bottom: 1px solid #333;
+}
+
+input[type="text"] {
+  border: 0;
+  padding: 10px;
+  flex-grow: 1;
+  font-size: 25px;
+  background-color: transparent;
+  outline: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  padding: 0;
+}
+
+.weather_icon {
+  display: block;
+  width: 200px;
+  margin: 20px auto 0;
+}
+
+.temp {
+  display: flex;
+  font-size: 50px;
+  text-align: center;
+  justify-content: center;
+  column-gap: 4px;
+  font-weight: 900;
+}
+
+.unit {
+  width: 0;
+  font-size: 20px;
+}
+
+.description {
+  display: block;
+  text-align: center;
+  font-size: 25px;
+  margin-top: 6px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.sub_info {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 20px 0;
+}
+
+.humidity {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  font-size: 20px;
+}
+
+.humidity::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: no-repeat url("./assets/humidity.png") 0 0 / 100%;
+}
+
+.wind {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  font-size: 20px;
+}
+
+.wind::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: no-repeat url("./assets/wind.png") 0 0 / 100%;
+}
+
+.empty {
+  padding: 30px 10px;
+  border-radius: 10px;
+  background-color: #eee;
+  text-align: center;
+  margin-top: 150px;
+  font-size: 22px;
+  line-height: 30px;
+  color: #bbb;
+  white-space: pre-wrap;
+}
+
+#weatherInfo {
+  display: none;
+}
+
+#weatherWrap {
+  transition: background 1s ease-in-out;
+  background: no-repeat url("./assets/weather_clear-2.jpg") center center / cover;
+}
