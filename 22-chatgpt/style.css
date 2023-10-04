@@ -1,0 +1,167 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
+.blind {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  user-select: none;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background: linear-gradient(277deg, #daaad2 20.04%, #9dd8fb 78.23%);
+}
+
+.gpt_wrap {
+  background-color: #343541;
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  height: 624px;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 50px 100px -20px;
+}
+
+header {
+  border-bottom: 1px solid #62636c;
+  padding: 20px;
+}
+
+.title {
+  color: #d9d9e3;
+  font-size: 20px;
+  text-align: center;
+}
+
+.content {
+  flex-grow: 1;
+  overflow: auto;
+}
+
+.message {
+  display: flex;
+  column-gap: 10px;
+  padding: 16px;
+  border-bottom: 1px solid #2a2b32;
+}
+
+.message.last-child {
+  border-bottom: 0;
+}
+
+.message.-bot {
+  background-color: #444654;
+}
+
+.profile {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.textarea {
+  color: #ccc;
+  padding-top: 6px;
+}
+
+.text {
+  white-space: pre-wrap;
+}
+
+.meta {
+  display: flex;
+  column-gap: 10px;
+  margin-top: 10px;
+}
+
+.btn {
+  background-color: transparent;
+  border: 0;
+  padding: 4px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #40414f;
+}
+
+.btn svg {
+  display: block;
+}
+
+.input_area {
+  border-top: 1px solid #5b5c65;
+  padding: 10px;
+}
+
+.input_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 16px;
+  background-color: #404150;
+  border-radius: 8px;
+  padding: 6px 12px;
+}
+
+.chat_label {
+  flex-grow: 1;
+}
+
+.chat_input {
+  background-color: transparent;
+  border: 0;
+  font-size: 20px;
+  color: #fff;
+  width: 100%;
+}
+
+.chat_input::placeholder {
+  color: #868697;
+}
+
+.chat_input:focus {
+  outline: none;
+}
+
+.btn_send {
+  background-color: transparent;
+  border: 0;
+  width: 32px;
+  height: 32px;
+  padding: 7px;
+  background-color: #19c37d;
+  border-radius: 6px;
+  margin-right: -4px;
+  cursor: pointer;
+}
+
+.send_icon path {
+  fill: #fff;
+}
+
+.btn_send:disabled {
+  background-color: transparent;
+}
+
+.btn_send:disabled path {
+  fill: #6f7181;
+}

@@ -1,0 +1,242 @@
+.blind {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  user-select: none;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url("./assets/background.png") 0 0 / cover;
+}
+
+button {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.iphone {
+  width: 375px;
+  height: 667px;
+  padding: 20px;
+  box-sizing: border-box;
+  background: url("./assets/iphone.png") 0 0 / 100% 100%;
+}
+
+.music_player {
+  height: 100%;
+  background-color: #000;
+  border-radius: 8px;
+  padding: 40px 20px 30px;
+  border-radius: 28px;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
+.cover_image {
+  width: 100%;
+  aspect-ratio: 1/1;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.cover_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.song_details {
+  margin-top: 10px;
+}
+
+.song_title {
+  margin: 20px 0 0;
+  font-size: 28px;
+  color: #fff;
+}
+
+.artist {
+  color: #ddd;
+  margin: 10px 0 0;
+}
+
+.controls_wrap {
+  overflow-x: auto;
+}
+
+.controls_wrap::-webkit-scrollbar {
+  display: none;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  margin: 10px 0 0;
+  column-gap: 10px;
+}
+
+.item {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  height: 35px;
+  padding: 0 12px;
+  color: #fff;
+}
+
+.like_area {
+  display: flex;
+  align-items: center;
+}
+
+.btn_like {
+  width: 18px;
+  height: 18px;
+  background: no-repeat url("./assets/like.png") 0 0 / contain;
+}
+
+.btn_like.active {
+  background-image: url("./assets/like-on.png");
+}
+
+.btn_dislike {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  background: no-repeat url("./assets/dislike.png") 0 0 / contain;
+  margin-left: 20px;
+}
+
+.btn_dislike.active {
+  background-image: url("./assets/dislike-on.png");
+}
+
+.btn_dislike::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.btn_comment {
+  width: 18px;
+  height: 18px;
+  background: no-repeat url("./assets/comment.png") 0 0 / contain;
+}
+
+.btn_share {
+  width: 18px;
+  height: 18px;
+  background: no-repeat url("./assets/share.png") 0 0 / contain;
+}
+
+.btn_save {
+  width: 18px;
+  height: 10px;
+  background: no-repeat url("./assets/save.png") 0 0 / contain;
+}
+
+.text {
+  font-size: 14px;
+  margin-left: 4px;
+  font-weight: 500;
+}
+
+.progress_bar {
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.progress {
+  width: 0%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.play_time {
+  color: #ddd;
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.play_controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.btn_shuffle {
+  width: 20px;
+  height: 20px;
+  background: no-repeat url("./assets/shuffle.png") 0 0 / contain;
+}
+
+.btn_prev {
+  width: 20px;
+  height: 20px;
+  background: no-repeat url("./assets/prev.png") 0 0 / contain;
+}
+
+.btn_next {
+  width: 20px;
+  height: 20px;
+  background: no-repeat url("./assets/next.png") 0 0 / contain;
+}
+
+.btn_play {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+}
+
+.btn_play::before {
+  content: "";
+  width: 18px;
+  height: 25px;
+  background: no-repeat url("./assets/play.png") 0 0 / contain;
+  margin-left: 6px;
+}
+
+.btn_play.pause::before {
+  background: no-repeat url("./assets/pause.png") 0 0 / contain;
+  margin-left: 0;
+}
+
+.btn_repeat {
+  width: 20px;
+  height: 20px;
+  background: no-repeat url("./assets/repeat.png") 0 0 / contain;
+}
+
+.btn_repeat.active {
+  background-image: url("./assets/repeat-on.png");
+}
