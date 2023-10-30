@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Painter App</title>
+  </head>
+  <body>
+    <div class="toolbar">
+      <div class="group">
+        <button type="button" class="btn pen_type active" id="pen">
+          <img src="./assets/pen.png" width="28" alt="" />
+        </button>
+        <button type="button" class="btn pen_type" id="eraser">
+          <img src="./assets/erase.png" width="28" alt="" />
+        </button>
+      </div>
+      <div class="group">
+        <button type="button" class="btn pen_size thin active" data-size="1"></button>
+        <button type="button" class="btn pen_size normal" data-size="3"></button>
+        <button type="button" class="btn pen_size semi-bold" data-size="5"></button>
+        <button type="button" class="btn pen_size bold" data-size="8"></button>
+      </div>
+      <div class="group">
+        <button type="button" class="btn pen_color active" data-color="#2d3436"></button>
+        <button type="button" class="btn pen_color" data-color="#6ad78e"></button>
+        <button type="button" class="btn pen_color" data-color="#ffcb57"></button>
+        <button type="button" class="btn pen_color" data-color="#ff5457"></button>
+        <button type="button" class="btn pen_color" data-color="#82ccdd"></button>
+        <button type="button" class="btn pen_color" data-color="#6c5ce7"></button>
+      </div>
+    </div>
+    <canvas id="canvas"></canvas>
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Notion Kanban Board</title>
+  </head>
+  <body>
+    <h1>
+      <img src="./assets/notion.png" alt="" width="200" />
+    </h1>
+    <div class="board">
+      <div class="column" id="todo">
+        <h3 class="title">Not Started</h3>
+        <button type="button" class="btn_add" data-type="todo">New</button>
+        <!-- <div class="item">
+          <span class="text" contenteditable="true">Untitled</span>
+        </div> -->
+      </div>
+      <div class="column" id="progress">
+        <h3 class="title">Progress</h3>
+        <button type="button" class="btn_add" data-type="progress">New</button>
+      </div>
+      <div class="column" id="complete">
+        <h3 class="title">Complete</h3>
+        <button type="button" class="btn_add" data-type="complete">New</button>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
